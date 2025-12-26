@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void collats(long long n,long long *max, long *len){
+void collatz(long long n,long long *max, long *len){
   *max=0; *len=0;
   for(;;){
     if(n==1)return;
@@ -16,7 +16,7 @@ int main(){
   long len;
 
   for(n=1;n<100;n++){
-   collats(n,&max,&len);
+   collatz(n,&max,&len);
    printf("%lld,%lld,%ld\n",n,max,len);
   } 
 }
