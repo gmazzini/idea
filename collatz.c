@@ -11,10 +11,10 @@ void collatz(long long n,long long *max, long long *len){
   }
 }
 
-int main(){
-  long long n,max,len;
-
-  for(n=1;n<100;n++){
+int main(int argc,char *argv[]){
+  long long n,max,len,top;
+  top=atoll(argv[1]);
+  for(n=1;n<top;n++){
    collatz(n,&max,&len);
    printf("%lld,%lld,%lld\n",n,max,len);
   } 
