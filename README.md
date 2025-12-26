@@ -4,10 +4,10 @@
 gnuplot <<'GP'
 set datafile separator ","
 set term pngcairo size 1200,700
-set output 'hist_len.png'
-set title 'Istogramma len (Collatz)'
+set output 'hist.png'
+set title 'Collatz'
 set xlabel 'len'
-set ylabel 'conteggio'
+set ylabel 'occ'
 set boxwidth 0.9
 set style fill solid 1.0
 set grid ytics
