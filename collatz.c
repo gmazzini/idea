@@ -1,19 +1,22 @@
 #include <stdio.h>
 
-void collats(long long n,long long *max, lonf *dutarion){
-  *max=0; *duration=0;
+void collats(long long n,long long *max, long *len){
+  *max=0; *len=0;
   for(;;){
     if(n==1)return;
     if(n%2==0)n=n/2;
     else n=3*n+1;
-    *duration++;
+    *len++;
     if(n>*max)*max=n;
   }
 }
 
 int main(){
   long long n,max;
-  
+  long len;
+
   for(n=1;n<100;n++){
-    
+   collats(n,&max,&len);
+   printf("%lld,%lld,%ld\n",n,max,len);
+  } 
 }
