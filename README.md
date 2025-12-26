@@ -1,5 +1,5 @@
 <pre>
-./q1 100000000 | awk -F',' '{h[$3]++} END{for(k in h) printf "%s,%d\n", k, h[k]}' | sort -t, -k1,1n
+./q1 1 1000000000 | awk -F',' '{h[$3]++} END{for(k in h) printf "%s,%d\n", k, h[k]}' | sort -t, -k1,1n > hist.dat
 
 gnuplot <<'GP'
 set datafile separator ","
