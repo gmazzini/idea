@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void collatz(long long n,long long *max, long long *len){
   *max=0; *len=0;
