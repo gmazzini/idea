@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void cc(long long n,long p){
-  printf("%lld ",n);
+  printf("%lld,%ld ",n,p);
   if(p==10)return;
   cc(n*2,p+1);
   if((n-1)%3==0)cc((n-1)/3,p+1);
