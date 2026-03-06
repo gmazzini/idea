@@ -3,7 +3,7 @@
 
 void cc(long long n,long p){
   printf("%lld,%ld ",n,p);
-  if(p==10)return;
+  if(p==20)return;
   cc(n*2,p+1);
   if(n>4 && (n-1)%3==0)cc((n-1)/3,p+1);
 }
