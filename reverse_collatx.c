@@ -13,7 +13,7 @@ void cc(long long n,long p){
   cc(n*2,p+1);
   if((n-1)%3==0){
     tmp=(n-1)/3;
-    if(tmp>1 && tmp&2==1)cc(tmp,p+1);
+    if(tmp>1 && tmp%2==1)cc(tmp,p+1);
   }
 }
 
