@@ -4,7 +4,7 @@
 void cc(long long n){
   printf("%lld ",n);
   if((n-1)%3==0)cc((n-1)/3);
-  else cc(n*2);
+  cc(n*2);
 }
 
 int main(int argc,char *argv[]){
