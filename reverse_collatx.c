@@ -10,5 +10,5 @@ void cc(long long n){
 int main(int argc,char *argv[]){
   long long t,n;
   t=atoll(argv[1]);
-  cc(1);
+  cc(2);
 }
